@@ -22,6 +22,8 @@ The local `dist/` folder is publish output and is ignored by Git. It is not part
 of the source tree on `origin/main`; source changes and the release build remain
 separate.
 
+Repository: [Weight Tracker on GitHub](https://github.com/yuri-dsc-y/FirstCodeAppSoftU).
+
 ## Project purpose and scope
 
 Weight Tracker is an offline-first, single-user Windows application for recording
