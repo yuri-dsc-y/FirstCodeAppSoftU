@@ -28,6 +28,7 @@ powershell -ExecutionPolicy Bypass -File tools/network_audit.ps1
 ## Project report
 
 The five-page project report, including two screenshots of the running application, is in [ProjectReport/ProjectReport.pdf](ProjectReport/ProjectReport.pdf). Its editable HTML source and screenshot files are alongside it.
+The [executed project plan and architecture proposal](ProjectReport/ProjectPlan.md) records the separation of concerns, decisions, assumptions, risks, AI-assisted work, and outstanding verification.
 
 The audit checks source imports and patterns; it does not prove OS-level network isolation or inspect every binary dependency. Before redistribution, test the packaged app in a network-blocked Windows environment and review the exact dependency versions and licenses listed in [DEPENDENCIES.md](DEPENDENCIES.md).
 
