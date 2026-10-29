@@ -1,0 +1,11 @@
+Portable distribution: WeightTracker\data\weight_tracker.db, beside WeightTracker.exe.
+
+Development and non-portable mode:
+%LOCALAPPDATA%\WeightTracker\weight_tracker.db
+
+If LOCALAPPDATA is unavailable, the application uses the user's profile folder\WeightTracker\weight_tracker.db.
+The application never silently changes to a temporary directory. If the selected folder
+cannot be written, it asks you to choose another persistent local folder.
+
+To remove portable app data, close the application and delete the portable data folder.
+Backups and exports saved elsewhere must be deleted separately.

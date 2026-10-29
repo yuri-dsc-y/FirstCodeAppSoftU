@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Weight Tracker | Project Report</title>
+<style>
+@page { size: A4; margin: 13mm 15mm 13mm; }
+* { box-sizing: border-box; }
+body { font-family: Aptos, Calibri, Arial, sans-serif; color: #23332d; font-size: 9.2pt; line-height: 1.13; }
+h1 { color: #237a57; font-size: 27pt; line-height: 1.02; margin: 3pt 0 5pt; }
+h2 { color: #237a57; font-size: 17pt; margin: 0 0 8pt; border-bottom: 1.5pt solid #d5e7db; padding-bottom: 5pt; }
+h3 { color: #237a57; font-size: 11pt; margin: 0 0 3pt; }
+p { margin: 0 0 5pt; }
+ul { margin: 3pt 0 0 15pt; padding: 0; }
+li { margin: 0 0 3pt; }
+.eyebrow { color: #6a7c73; font-size: 8pt; text-transform: uppercase; letter-spacing: 1.1pt; font-weight: bold; }
+.subtitle { font-size: 11pt; color: #61736b; margin: 0 0 14pt; }
+.section-title { font-size: 11pt; color: #237a57; font-weight: bold; margin: 10pt 0 4pt; }
+.lead { font-size: 10pt; line-height: 1.2; }
+.callout { background: #edf5ef; border-left: 3pt solid #237a57; padding: 7pt 9pt; margin: 6pt 0; }
+.grid { width: 100%; border-collapse: separate; border-spacing: 5pt; margin: 0 -5pt; }
+.grid td { width: 50%; vertical-align: top; background: #f3f6f3; padding: 7pt; }
+.requirements { width: 100%; border-collapse: collapse; margin-top: 3pt; }
+.requirements td { border-bottom: .5pt solid #dce5df; padding: 4pt 5pt; vertical-align: top; }
+.requirements td:first-child { width: 22%; color: #237a57; font-weight: bold; }
+.architecture { width: 100%; border-collapse: separate; border-spacing: 4pt; margin: 0 -4pt 7pt; }
+.architecture td { width: 20%; text-align: center; vertical-align: top; background: #edf5ef; padding: 6pt 4pt; font-size: 8pt; }
+.architecture strong { color: #237a57; display: block; font-size: 8.5pt; margin-bottom: 2pt; }
+.module { background: #f5f7f5; border: .6pt solid #dce6df; padding: 7pt 9pt; margin: 0 0 7pt; }
+.module h3 { font-size: 11pt; margin-bottom: 4pt; }
+.module p { margin-bottom: 3pt; }
+.label { color: #237a57; font-weight: bold; }
+.prompt { color: #52665c; font-style: italic; }
+.small { font-size: 8pt; color: #64756d; }
+.page { page-break-before: always; break-before: page; }
+.challenge { margin-bottom: 7pt; }
+.challenge strong { color: #237a57; }
+.comparison { width: 100%; border-collapse: collapse; margin: 6pt 0; }
+.comparison th, .comparison td { text-align: left; vertical-align: top; border: .5pt solid #d8e2db; padding: 5pt; }
+.comparison th { background: #edf5ef; color: #237a57; }
+.evidence-image { display: block; width: 100%; height: auto; border: .6pt solid #d5ded8; margin: 3pt 0 2pt; }
+.caption { color: #566a60; font-size: 8pt; margin: 0 0 6pt; }
+.footer-note { margin-top: 6pt; padding-top: 4pt; border-top: .5pt solid #d8e2db; color: #64756d; font-size: 7.5pt; }
+</style>
+</head>
+<body>
+<section>
+  <div class="eyebrow">Software project report | Windows desktop application</div>
+  <h1>Weight Tracker</h1>
+  <p class="subtitle">An offline-first personal measurement log built with C# WPF, .NET 10 and SQLite</p>
+
+  <div class="section-title">Project idea</div>
+  <p class="lead">Weight Tracker is a small local Windows application for recording dated weight measurements and understanding change over time. It combines a quick daily-entry form with a dashboard, measurement history, a trend chart and Monday-to-Sunday averages. Data stays in a local SQLite database. The portable Windows x64 package is self-contained, so the target PC does not need a separate .NET installation.</p>
+
+  <div class="section-title">System requirements</div>
+  <table class="requirements">
+    <tr><td>Platform</td><td>Windows desktop; C# / .NET 10 WPF, Windows x64 single-file deployment.</td></tr>
+    <tr><td>Record keeping</td><td>One measurement per date; accept only finite positive weights, allow an optional note, and support editing and deletion.</td></tr>
+    <tr><td>Calculations</td><td>Store weights in kilograms; convert kg/lb for display; report weekly averages using only actual entries and calendar weeks running Monday through Sunday.</td></tr>
+    <tr><td>Views &amp; settings</td><td>Dashboard summaries, date-range trend chart, searchable history, weekly table, light/dark appearance, color scheme, precision and date format.</td></tr>
+    <tr><td>Data workflows</td><td>Local SQLite persistence, backup/validated restore, CSV and JSON export, validated JSON import, and explicit record deletion.</td></tr>
+    <tr><td>Privacy &amp; reliability</td><td>No account, telemetry, sync or network service is designed into the app. Preserve user data locally and report storage errors rather than silently moving it.</td></tr>
+  </table>
+
+  <div class="callout"><strong>Scope:</strong> This is a personal tracker, not a medical device or a cloud service. “Offline by design” describes the implementation and static source audit; runtime testing with Windows networking blocked remains outstanding.</div>
+  <p class="footer-note">Project evidence and implementation details summarized from the source, README, test harness and generated Windows package.</p>
+</section>
+
+<section class="page">
+  <h2>System architecture &amp; modules</h2>
+  <table class="architecture">
+    <tr>
+      <td><strong>1 · WPF UI</strong>Entry, dashboard, history, chart and settings</td>
+      <td><strong>2 · Domain logic</strong>Units, dates, ranges and summaries</td>
+      <td><strong>3 · SQLite store</strong>Records, settings, weekly cache and transactions</td>
+      <td><strong>4 · Local workflows</strong>Quotes, CSV/JSON and backups</td>
+      <td><strong>5 · Quality &amp; release</strong>Core checks, source audit and publish script</td>
+    </tr>
+  </table>
+  <p class="small">The WPF window calls typed C# services. The store is the source of truth; weekly aggregates are recalculated within write transactions. The chart and summaries render locally from query results.</p>
+
+  <div class="module">
+    <h3>Module 1 — User interface and visualization</h3>
+    <p><span class="label">Approach &amp; reasoning:</span> Use a native WPF window and a few clear screens rather than add a web stack or chart dependency. Keep entry, summaries and trend visible together; use WPF shapes for the chart.</p>
+    <p><span class="label">Workflow:</span> Build the Overview form and summary cards, then connect navigation, searchable/editable history, weekly table, settings, date-range selector and chart to service methods.</p>
+    <p><span class="label">Testing strategy:</span> Launch the packaged app, inspect populated dashboard and weekly screens, and verify navigation and rendering with synthetic local data. Automated checks focus on the underlying services, not pixel-level UI.</p>
+    <p><span class="label">AI tool:</span> Copilot in VS Code supported edits against the local XAML and C# context; build and launch checks provided independent verification.</p>
+    <p class="prompt">Representative prompt (summary): “Build a native WPF dashboard with entry, history, weekly averages, settings and a local trend chart.”</p>
+  </div>
+
+  <div class="module">
+    <h3>Module 2 — Measurement rules and analytics</h3>
+    <p><span class="label">Approach &amp; reasoning:</span> Keep kilograms as the canonical value so display-unit changes do not rewrite stored records. Centralize conversions, Monday/Sunday boundaries, date ranges and change calculations in <code>WeightService</code>.</p>
+    <p><span class="label">Workflow:</span> Add positive finite-value validation and kg/lb conversion; derive date ranges and averages from actual dated entries; refresh summary and chart after add, edit or delete.</p>
+    <p><span class="label">Testing strategy:</span> Check pound conversion, week boundaries crossing a month, leap-day month ranges, correct record counts and recalculation after an edit or deletion.</p>
+    <p><span class="label">AI tool:</span> Copilot in VS Code helped draft and refine service logic; deterministic test assertions checked the result.</p>
+    <p class="prompt">Representative prompt (summary): “Keep weights in kg internally, validate finite positive values, and compute Monday–Sunday averages from recorded entries only.”</p>
+  </div>
+</section>
+
+<section class="page">
+  <h2>Development process by module</h2>
+
+  <div class="module">
+    <h3>Module 3 — SQLite persistence</h3>
+    <p><span class="label">Approach &amp; reasoning:</span> Use a compact local database with parameterized commands and transactions. Enforce unique dates and valid weights in the schema; keep settings and weekly summaries local as well.</p>
+    <p><span class="label">Workflow:</span> Create schema version 1, implement record/settings queries, save and delete operations, and recalculate weekly aggregates in the same transaction as each mutation.</p>
+    <p><span class="label">Testing strategy:</span> Exercise save, duplicate-date rejection, edit/delete, persisted settings, weekly aggregate counts and SQLite backup/restore through isolated temporary databases.</p>
+    <p><span class="label">AI tool:</span> Copilot in VS Code was used to work within the existing C# service and project conventions; the test harness and SQLite execution verified behavior.</p>
+    <p class="prompt">Representative prompt (summary): “Persist measurements and settings locally; make each change and its weekly-summary recalculation atomic.”</p>
+  </div>
+
+  <div class="module">
+    <h3>Module 4 — Local resources and data exchange</h3>
+    <p><span class="label">Approach &amp; reasoning:</span> Bundle quotes as JSON and keep import/export self-contained. Validate an entire JSON import before writing so malformed input cannot partially replace existing entries; use SQLite’s backup API for database copies.</p>
+    <p><span class="label">Workflow:</span> Load and validate local quote records, choose a daily quote deterministically, export kg-based CSV/JSON and import validated JSON with conflict updates.</p>
+    <p><span class="label">Testing strategy:</span> Verify bundled quote count and selection, JSON round-trip, invalid-import non-mutation, and database backup/restore.</p>
+    <p><span class="label">AI tool:</span> Copilot in VS Code assisted with the service implementation; filesystem and database assertions confirmed the file workflows.</p>
+    <p class="prompt">Representative prompt (summary): “Validate all imported measurements before applying changes; malformed imports must leave the existing database unchanged.”</p>
+  </div>
+
+  <div class="module">
+    <h3>Module 5 — Quality checks and packaging</h3>
+    <p><span class="label">Approach &amp; reasoning:</span> Keep verification runnable without a separate test framework; distribute a self-contained win-x64 executable with local resources and data-location guidance.</p>
+    <p><span class="label">Workflow:</span> Run the console service checks, scan C# source for common network-client APIs, then use the Windows script to publish the single-file app and copy its guides/resources.</p>
+    <p><span class="label">Testing strategy:</span> 14 core checks pass; the static source network audit reports no configured clients; startup/shutdown smoke test passed. The audit is not proof of OS network isolation.</p>
+    <p><span class="label">AI tool:</span> Copilot in VS Code assisted with source and test changes; .NET SDK, test runner and PowerShell audit were used for reproducible checks.</p>
+    <p class="prompt">Representative prompt (summary): “Add focused tests for date boundaries, editing, import safety and backup; keep the release self-contained for Windows x64.”</p>
+  </div>
+</section>
+
+<section class="page">
+  <h2>Challenges, tool comparison &amp; next steps</h2>
+
+  <p class="challenge"><strong>Biggest challenge — date-correct summaries.</strong> Week boundaries must remain Monday–Sunday across month and year changes, and averages must include only recorded measurements. An edit or delete must also update the corresponding aggregates. Focused edge-case tests helped pin down these rules.</p>
+  <p class="challenge"><strong>Data integrity and portability.</strong> Import validation needs to finish before database mutation; backup restore needs an integrity/schema check. For portable deployment, the user database must remain beside the app rather than inside .NET’s temporary native-library extraction directory.</p>
+  <p class="challenge"><strong>Offline claims.</strong> A source scan can catch common networking APIs, but cannot prove that a binary or operating system will never communicate. Accordingly, the report does not claim that firewall-blocked runtime behavior has been verified.</p>
+
+  <div class="section-title">Tool comparison and choice</div>
+  <p>Copilot (through the Copilot SDK in VS Code) was the AI coding assistant used. Its main advantage for this project was staying close to the open workspace: it could help refine changes across WPF, services, tests and documentation in the same repository. It was preferred over a standalone chat workflow for that integrated code context and edit/test loop.</p>
+  <table class="comparison">
+    <tr><th>Tool / role</th><th>Contribution and limits</th></tr>
+    <tr><td>Copilot in VS Code</td><td>AI assistance for implementation and refinement in project context. Suggestions still required review and executable tests.</td></tr>
+    <tr><td>.NET SDK / test harness</td><td>Repeatable builds and 14 concrete service checks. Not an AI assistant; supplied evidence beyond generated code.</td></tr>
+    <tr><td>PowerShell source audit</td><td>Repeatable scan for common network-related source patterns. Not a binary inspection or firewall test.</td></tr>
+    <tr><td>Other AI editors / agents</td><td>Not benchmarked on this project; no measured quality or speed comparison is claimed.</td></tr>
+  </table>
+
+  <div class="section-title">What I would improve next</div>
+  <ul>
+    <li>Add automated Windows UI/accessibility tests for navigation, validation, dialogs and chart rendering.</li>
+    <li>Complete a controlled firewall-blocked runtime test and record the firewall/packet evidence.</li>
+    <li>Add database migration tests and broader edge cases for empty, duplicate and boundary-date data.</li>
+    <li>Review quote provenance and attribution before redistribution; maintain a verified source list.</li>
+  </ul>
+
+  <div class="callout"><strong>Evidence snapshot:</strong> 14 core checks passed; the static source audit passed; the app opened and closed cleanly. The screenshots on the next page use synthetic sample records in an isolated database, not the existing portable package database.</div>
+  <p class="footer-note">AI prompt examples in this report are concise representative summaries of the implementation requests, not a verbatim chat transcript.</p>
+</section>
+
+<section class="page">
+  <h2>Working system evidence</h2>
+  <p>Captured from the running Windows WPF application using synthetic sample records and a separate local database. The dashboard shows recent change, weekly summaries and the local trend; the second view shows the Monday–Sunday aggregate table.</p>
+  <img class="evidence-image" src="evidence/overview.png" alt="Weight Tracker dashboard showing sample measurements, summaries and the trend chart">
+  <p class="caption"><strong>Figure 1.</strong> Overview dashboard with 12 synthetic entries, current/prior-week summaries and the local trend chart. Evidence captured 29 October 2026.</p>
+  <img class="evidence-image" src="evidence/weekly-averages.png" alt="Weight Tracker weekly averages table showing Monday-to-Sunday weeks and entry counts">
+  <p class="caption"><strong>Figure 2.</strong> Weekly averages screen showing week start/end, average weight, measurement count and current/completed status. Evidence captured 29 October 2026.</p>
+  <p class="footer-note">The demonstration data is only for screenshots; it is not included in the published application or the user's portable database.</p>
+</section>
+</body>
+</html>

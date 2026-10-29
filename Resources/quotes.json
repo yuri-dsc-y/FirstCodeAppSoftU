@@ -1,0 +1,702 @@
+[
+    {
+        "id":  "provided-001",
+        "text":  "You are not prepared!",
+        "author":  "Illidan Stormrage",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-002",
+        "text":  "The time has come to make things right.",
+        "author":  "Thrall",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-003",
+        "text":  "For the Horde!",
+        "author":  "Thrall and Horde warriors",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-004",
+        "text":  "Light be with you.",
+        "author":  "Uther the Lightbringer",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-005",
+        "text":  "A true leader bears the weight of every life entrusted to them.",
+        "author":  "Anduin Wrynn",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-006",
+        "text":  "Stand together, or fall alone.",
+        "author":  "Varian Wrynn",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-007",
+        "text":  "Strength comes from knowing what you fight for.",
+        "author":  "Thrall",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-008",
+        "text":  "The future is not yet written.",
+        "author":  "Medivh",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-009",
+        "text":  "No sacrifice is too great for the survival of our people.",
+        "author":  "Sylvanas Windrunner",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-010",
+        "text":  "Honor is earned through action.",
+        "author":  "Varok Saurfang",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-011",
+        "text":  "A warrior\u0027s greatest strength is their resolve.",
+        "author":  "Grommash Hellscream",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-012",
+        "text":  "Even in darkness, there is a path forward.",
+        "author":  "Jaina Proudmoore",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-013",
+        "text":  "The past cannot be changed, but the future can.",
+        "author":  "Arthas Menethil",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-014",
+        "text":  "We fight for those who cannot fight for themselves.",
+        "author":  "Tirion Fordring",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-015",
+        "text":  "Courage means standing when retreat would be easier.",
+        "author":  "Muradin Bronzebeard",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-016",
+        "text":  "The strength of the pack is the wolf.",
+        "author":  "Genn Greymane",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-017",
+        "text":  "Destiny is shaped by the choices we make.",
+        "author":  "Medivh",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-018",
+        "text":  "A people who endure cannot be easily broken.",
+        "author":  "Baine Bloodhoof",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-019",
+        "text":  "Never surrender what you are sworn to protect.",
+        "author":  "Bolvar Fordragon",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-020",
+        "text":  "Our deeds will define us.",
+        "author":  "Varian Wrynn",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-021",
+        "text":  "My life for Aiur!",
+        "author":  "Protoss Zealot",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-022",
+        "text":  "The only choice is war.",
+        "author":  "StarCraft franchise tagline",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-023",
+        "text":  "We have a job to do.",
+        "author":  "Jim Raynor",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-024",
+        "text":  "Never give up the fight.",
+        "author":  "Jim Raynor",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-025",
+        "text":  "The future belongs to those who survive.",
+        "author":  "Sarah Kerrigan",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-026",
+        "text":  "We stand as one.",
+        "author":  "Artanis",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-027",
+        "text":  "Sacrifice is the price of victory.",
+        "author":  "Tassadar",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-028",
+        "text":  "Even against impossible odds, we fight.",
+        "author":  "Raynor\u0027s Raiders",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-029",
+        "text":  "Our duty is greater than ourselves.",
+        "author":  "Artanis",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-030",
+        "text":  "The swarm will endure.",
+        "author":  "Sarah Kerrigan",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-031",
+        "text":  "We make our own fate.",
+        "author":  "Jim Raynor",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-032",
+        "text":  "A commander must never lose sight of the mission.",
+        "author":  "Matt Horner",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-033",
+        "text":  "The past does not have to define the future.",
+        "author":  "Sarah Kerrigan",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-034",
+        "text":  "Stand firm, no matter the cost.",
+        "author":  "Fenix",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-035",
+        "text":  "The strong protect those who cannot protect themselves.",
+        "author":  "Zeratul",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-036",
+        "text":  "Victory requires more than strength; it requires unity.",
+        "author":  "Artanis",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-037",
+        "text":  "We will not be forgotten.",
+        "author":  "Fenix",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-038",
+        "text":  "Every battle teaches us how to win the next.",
+        "author":  "Jim Raynor",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-039",
+        "text":  "Hope survives where courage remains.",
+        "author":  "Zeratul",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-040",
+        "text":  "Our destiny is ours to claim.",
+        "author":  "Artanis",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-041",
+        "text":  "Be faithful! Be strong! Be vigilant!",
+        "author":  "The Emperor of Mankind",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-042",
+        "text":  "My will be done.",
+        "author":  "Imperial maxim",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-043",
+        "text":  "What fear of death have we who know there is immortality in the great and noble deeds of men?",
+        "author":  "Unattributed",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-044",
+        "text":  "Let the strength of your will match the stone of your walls.",
+        "author":  "Unattributed",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-045",
+        "text":  "A fortress is a living thing.",
+        "author":  "Mordin Barr",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-046",
+        "text":  "Failure is not an option.",
+        "author":  "Captain Androcles",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-047",
+        "text":  "We fight as if our chances were zero.",
+        "author":  "Justicar Alaric",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-048",
+        "text":  "The flesh is weak.",
+        "author":  "Iron Hands credo",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-049",
+        "text":  "Victory does not always rest with the big guns.",
+        "author":  "Commander Argentius",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-050",
+        "text":  "From the darkness we strike.",
+        "author":  "Raven Guard maxim",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-051",
+        "text":  "We are the Emperor\u0027s angels of death, not his angels of mercy.",
+        "author":  "Sergeant Avitus",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-052",
+        "text":  "War is about victory!",
+        "author":  "Apothecary Pythol",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-053",
+        "text":  "We go where we wilt.",
+        "author":  "Sergeant D\u0027Kestrel",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-054",
+        "text":  "Give me a hundred Space Marines.",
+        "author":  "Rogal Dorn",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-055",
+        "text":  "Only the spirit is pure.",
+        "author":  "Iron Hands credo",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-056",
+        "text":  "Even when broken, a sword may still cut.",
+        "author":  "Aun\u0027ko\u0027vash",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-057",
+        "text":  "The question of timing … once decided, it must be pursued with utmost energy.",
+        "author":  "Commander Puretide",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-058",
+        "text":  "A well-maintained warrior is an effective warrior.",
+        "author":  "Unattributed maxim",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-059",
+        "text":  "Today … we fight for the Greater Good!",
+        "author":  "Aun\u0027el Shi\u0027Ores",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-060",
+        "text":  "We must fight in ways they do not expect.",
+        "author":  "Aeonid Thiel",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-061",
+        "text":  "May the Force be with you.",
+        "author":  "Various characters",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-062",
+        "text":  "In my experience, there\u0027s no such thing as luck.",
+        "author":  "Obi-Wan Kenobi",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-063",
+        "text":  "Do. Or do not. There is no try.",
+        "author":  "Yoda",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-064",
+        "text":  "Fear is the path to the dark side.",
+        "author":  "Yoda",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-065",
+        "text":  "I am a Jedi, like my father before me.",
+        "author":  "Luke Skywalker",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-066",
+        "text":  "Your focus determines your reality.",
+        "author":  "Qui-Gon Jinn",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-067",
+        "text":  "Never tell me the odds!",
+        "author":  "Han Solo",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-068",
+        "text":  "Rebellions are built on hope.",
+        "author":  "Jyn Erso",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-069",
+        "text":  "The Force will be with you. Always.",
+        "author":  "Obi-Wan Kenobi",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-070",
+        "text":  "Luminous beings are we, not this crude matter.",
+        "author":  "Yoda",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-071",
+        "text":  "Your eyes can deceive you. Don\u0027t trust them.",
+        "author":  "Obi-Wan Kenobi",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-072",
+        "text":  "The greatest teacher, failure is.",
+        "author":  "Yoda",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-073",
+        "text":  "I will not be the last Jedi.",
+        "author":  "Rey",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-074",
+        "text":  "We are what they grow beyond.",
+        "author":  "Yoda",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-075",
+        "text":  "Who\u0027s the more foolish, the fool or the fool who follows him?",
+        "author":  "Obi-Wan Kenobi",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-076",
+        "text":  "The belonging you seek is not behind you … it is ahead.",
+        "author":  "Maz Kanata",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-077",
+        "text":  "You can\u0027t stop the change, any more than you can stop the suns from setting.",
+        "author":  "Shmi Skywalker",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-078",
+        "text":  "I know what I have to do.",
+        "author":  "Kylo Ren",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-079",
+        "text":  "The light … it\u0027s always been there.",
+        "author":  "Rey",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-080",
+        "text":  "We are the spark that will light the fire.",
+        "author":  "Poe Dameron",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-081",
+        "text":  "Not all those who wander are lost.",
+        "author":  "Bilbo Baggins",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-082",
+        "text":  "All we have to decide is what to do with the time that is given us.",
+        "author":  "Gandalf",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-083",
+        "text":  "There is some good in this world, and it\u0027s worth fighting for.",
+        "author":  "Samwise Gamgee",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-084",
+        "text":  "I can\u0027t carry it for you, but I can carry you!",
+        "author":  "Samwise Gamgee",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-085",
+        "text":  "Deeds will not be less valiant because they are unpraised.",
+        "author":  "Aragorn",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-086",
+        "text":  "Even the smallest person can change the course of the future.",
+        "author":  "Galadriel",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-087",
+        "text":  "There is always hope.",
+        "author":  "Aragorn",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-088",
+        "text":  "A day may come when the courage of men fails … but it is not this day.",
+        "author":  "Aragorn",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-089",
+        "text":  "I will take the Ring, though I do not know the way.",
+        "author":  "Frodo Baggins",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-090",
+        "text":  "The world is indeed full of peril.",
+        "author":  "Haldir",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-091",
+        "text":  "Faithless is he that says farewell when the road darkens.",
+        "author":  "Gimli",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-092",
+        "text":  "There is no curse in Elvish, Entish, or the tongues of Men for this treachery.",
+        "author":  "Treebeard",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-093",
+        "text":  "Courage is found in unlikely places.",
+        "author":  "Gildor Inglorion",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-094",
+        "text":  "The brave things in the old tales …",
+        "author":  "Samwise Gamgee",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-095",
+        "text":  "I will not say: do not weep; for not all tears are an evil.",
+        "author":  "Gandalf",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-096",
+        "text":  "There is a seed of courage hidden in the heart of the meekest hobbit.",
+        "author":  "Gandalf",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-097",
+        "text":  "The wide world is all about you.",
+        "author":  "Gildor Inglorion",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-098",
+        "text":  "A hunted man sometimes wearies of distrust and longs for friendship.",
+        "author":  "Aragorn",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-099",
+        "text":  "The quest stands upon the edge of a knife.",
+        "author":  "Galadriel",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    },
+    {
+        "id":  "provided-100",
+        "text":  "There is no strength left in the world of Men.",
+        "author":  "Éowyn",
+        "sourceTitle":  null,
+        "sourceUrl":  null
+    }
+]

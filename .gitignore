@@ -1,0 +1,10 @@
+.vs/
+bin/
+obj/
+build/
+dist/
+*.db
+*.db-shm
+*.db-wal
+__pycache__/
+*.py[cod]
